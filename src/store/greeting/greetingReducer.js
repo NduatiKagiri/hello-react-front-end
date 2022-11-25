@@ -1,4 +1,4 @@
-const URL = 'http://127.0.0.1:3000'
+const URL = 'http://127.0.0.1:3000';
 const GREET = '/greeting/GREET';
 
 export default function greetingReducer(state = [], action = {}) {
@@ -12,7 +12,7 @@ export default function greetingReducer(state = [], action = {}) {
 
 function fetchGreeting() {
   return async (dispatch) => {
-    const response = await fetch('URL');
+    const response = await fetch(URL);
     const greeting = await response.json();
 
     dispatch({
