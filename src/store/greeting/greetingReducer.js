@@ -12,7 +12,7 @@ export default function greetingReducer(state = [], action = {}) {
 
 function fetchGreeting() {
   return async (dispatch) => {
-    const response = await fetch('URL);
+    const response = await fetch('URL');
     const greeting = await response.json();
 
     dispatch({
